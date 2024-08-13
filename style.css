@@ -1,27 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #fff;
+    color: #333;
 }
 
-#chat {
+#login-container, #chat-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#header {
     display: flex;
-    flex-direction: column;
-    height: 90vh;
-    border: 1px solid #ccc;
-    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
     padding: 10px;
 }
 
 #messages {
-    flex: 1;
-    overflow-y: auto;
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
 
-#messageInput {
-    width: 80%;
+textarea {
+    width: calc(100% - 22px);
+    height: 60px;
 }
 
-#sendMessage {
-    width: 18%;
+button {
+    margin: 5px;
 }
