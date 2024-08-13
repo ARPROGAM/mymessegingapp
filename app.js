@@ -19,8 +19,8 @@ const db = getFirestore();
 const storage = getStorage();
 
 const login = async () => {
-    const username = document.getElementById('login-username').value;
-    const password = document.getElementById('login-password').value;
+    const username = document.getElementById('login-delirmek.123@gmail.com').value;
+    const password = document.getElementById('login-12345678').value;
 
     try {
         await signInWithEmailAndPassword(auth, username, password);
